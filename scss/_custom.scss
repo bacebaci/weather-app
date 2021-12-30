@@ -1,0 +1,141 @@
+$primary-purple : #8e3b6f;
+$primary-gray : #262936;
+$transparent : #1e202b8a;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    background-image: url("../../images/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+input {
+    background: $primary-gray;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+input[type="submit"] {
+       height: 40px;
+       font-weight: bold;
+       padding: 0 25px;
+       background: $primary-purple;
+}
+
+nav{
+    padding: 10px;
+    background-color: $transparent;
+
+    .weather-logo {
+        text-transform: uppercase;
+        color: $primary-purple;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    li{
+       list-style-type: none;
+        margin: 5px;
+        :hover {
+            background: none;
+            color: white;
+            border: 2px solid #8e3b6f;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+    }
+    a {
+     color: $primary-purple;
+     text-transform: uppercase;
+      padding: 5px 10px;
+        :hover {
+          text-decoration: none;
+        }
+    }
+}
+
+.find-location {
+    width: 60%;
+    margin: 60px auto;
+}
+
+#findLocation {
+    .find-location {
+        width: 50%;
+        position: relative;
+
+             input[type="text"] {
+            width: 100%;
+            padding: 20px 50px 20px 20px;
+
+        }
+            input[type="submit"] {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+
+            }
+      }
+}
+
+#showWeather {
+    width: 50%;
+    margin: auto;
+    background-color: $transparent;
+    border-radius: 25px;
+
+    h1 {
+        font-size: 70px;
+    }
+
+    img {
+        width: 70px;
+    }
+
+    .weather-description {
+        font-size: 19px;
+        padding: 20px;
+        background-color: $primary-gray;
+        margin-top: 20px;
+        border-radius: 0  0 25px 25px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#errorCity{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    color: #a94442;
+    background-color: #f2dede;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+table {
+    background: $transparent;
+    font-size: 18px;
+
+       thead {
+           background: $primary-gray;
+       }
+         th,td {
+             padding: 5px;
+         }
+
+
+}
+
+

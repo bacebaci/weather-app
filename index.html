@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar d-flex justify-content-around align-items-baseline">
+            <div>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="img-fluid">
+            </a>
+                <span class="weather-logo p-2">Weather</span>
+            </div>
+            <div>
+            <ul class="nav d-flex">
+                <li class="nav-item p-2">
+                    <a class="nav-link active" href="index.html">Current</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="forecast.html">Forecast</a>
+                </li>
+
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center text-uppercase m-5 text-monospace">Weather Forecasts from every part of the World</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id="findLocation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="find-location">
+                            <input type="text" name="city" id="city"  placeholder="Enter city name">
+                            <input type="submit" id="submitCity" value="Find">
+                            <div class="">
+                                <span id="error"></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="container" >
+                <div id="showWeather">
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+    <script src="js/currentWeather.js"></script>
+</body>
+</html>
